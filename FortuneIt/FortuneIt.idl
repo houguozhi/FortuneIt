@@ -1,0 +1,29 @@
+// FortuneIt.idl : FortuneIt.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(FortuneIt.tlb)。
+
+[ uuid(175CF874-DF9A-45EE-9DFF-AA8D79B4E7EB), version(1.0) ]
+library FortuneIt
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CFortuneItDoc 的主调度接口
+	
+	[ uuid(B598BB9B-4D55-4515-B521-EFCDA96962B8) ]
+	dispinterface IFortuneIt
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CFortuneItDoc 的类信息
+	
+	[ uuid(E3E99A2A-3DDC-4D36-BFD0-F8C3DA6557EF) ]
+	coclass CFortuneItDoc
+	{
+		[default] dispinterface IFortuneIt;
+	};
+};

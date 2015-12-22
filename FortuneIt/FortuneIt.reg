@@ -1,0 +1,22 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+HKEY_CLASSES_ROOT\.for = FortuneIt.Document
+HKEY_CLASSES_ROOT\FortuneIt.Document\shell\open\command = FortuneIt.EXE %1
+HKEY_CLASSES_ROOT\FortuneIt.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\FortuneIt.Document\shell\open\ddeexec\application = FortuneIt
+    ; 注意: 此应用程序是可选的
+    ;  (默认为“命令”中的应用程序名)
+
+HKEY_CLASSES_ROOT\FortuneIt.Document = FortuneIt.Document
+
+
+HKEY_CLASSES_ROOT\FortuneIt.Document\CLSID = {E3E99A2A-3DDC-4D36-BFD0-F8C3DA6557EF}
+
+HKEY_CLASSES_ROOT\CLSID\{E3E99A2A-3DDC-4D36-BFD0-F8C3DA6557EF} = FortuneIt.Document
+HKEY_CLASSES_ROOT\CLSID\{E3E99A2A-3DDC-4D36-BFD0-F8C3DA6557EF}\ProgId = FortuneIt.Document
+
+HKEY_CLASSES_ROOT\CLSID\{E3E99A2A-3DDC-4D36-BFD0-F8C3DA6557EF}\LocalServer32 = FortuneIt.EXE
