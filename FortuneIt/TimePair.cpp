@@ -3,7 +3,13 @@
 
 CTimePair::CTimePair()
 {
+	start = end = COleDateTime(0.0);
+}
 
+CTimePair::CTimePair(COleDateTime &_start, COleDateTime &_end)
+{
+	start = _start;
+	end = _end;	
 }
 
 CTimePair::~CTimePair()
@@ -12,3 +18,13 @@ CTimePair::~CTimePair()
 }
 
 
+
+
+CHgzTime::CHgzTime()
+{
+}
+
+
+CHgzTime::~CHgzTime()
+{
+}

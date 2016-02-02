@@ -16,6 +16,9 @@
     <Filter Include="hgz">
       <UniqueIdentifier>{cdaac97d-3114-4500-8908-f897e205668f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ChartCtrl">
+      <UniqueIdentifier>{7302dcef-037e-4cd1-b8be-5e52d168f1c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -99,6 +102,105 @@
     <ClInclude Include="stock_core_types.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DlgStock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxis.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxisLabel.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBalloonLabel.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBarSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCandlestickSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCrossHairCursor.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrl.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCursor.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDateTimeAxis.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDragLineCursor.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartFont.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGanttSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGradient.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGrid.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLabel.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLegend.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLineSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLogarithmicAxis.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartMouseListener.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsArray.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartScrollBar.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerieBase.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSeriesMouseListener.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartStandardAxis.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartString.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSurfaceSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartTitle.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartXYSerie.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\PointsOrdering.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrlHeaders.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FortuneIt.cpp">
@@ -170,6 +272,81 @@
     <ClCompile Include="ftsplit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DlgStock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stock_core_types.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxis.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxisLabel.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBarSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCandlestickSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCrossHairCursor.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrl.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCursor.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDateTimeAxis.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDragLineCursor.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartFont.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGanttSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGradient.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGrid.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLegend.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLineSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLogarithmicAxis.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartScrollBar.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartStandardAxis.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSurfaceSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartTitle.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartXYSerie.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="FortuneIt.idl">
@@ -180,6 +357,18 @@
     <None Include="FortuneIt.reg" />
     <None Include="res\FortuneIt.rc2">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBalloonLabel.inl">
+      <Filter>ChartCtrl</Filter>
+    </None>
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLabel.inl">
+      <Filter>ChartCtrl</Filter>
+    </None>
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsArray.inl">
+      <Filter>ChartCtrl</Filter>
+    </None>
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerieBase.inl">
+      <Filter>ChartCtrl</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

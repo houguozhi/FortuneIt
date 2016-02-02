@@ -22,18 +22,8 @@ public:
 // (注意: 必须使用 3.5 版或更高版本的 ODBC 驱动程序
 // 以同时支持 Unicode 和这些转换)。
 
-	/*CTime	m_CreateDate;
-	CString	m_RecordCreator;
-	double	m_RecordVersion;
-	CString	m_MarketLable;
-	CString	m_SecurityType;*/
-	CString	m_StkLable;
-	CTime	m_StkTime;
-	double	m_Hg;
-	double	m_Pg;
-	double	m_Pgj;
-	double	m_Hl;
-	//CString	m_Reserved1;
+	CString	m_lable;
+	CSplitData m_SplitData;
 
 	// parameters
 	CString m_StkLableParam;
@@ -62,6 +52,11 @@ public:
 	BOOL Open(const CString &lable, const CTimePair &time);
 	BOOL Requery(const CString &lable, const CTimePair &time);
 	void print(int num = -1);
+
+	BOOL IsEmpty()
+	{
+		return (IsBOF() && IsEOF());
+	}
 
 
 };

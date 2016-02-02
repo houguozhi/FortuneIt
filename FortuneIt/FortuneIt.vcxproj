@@ -119,6 +119,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -207,6 +208,39 @@
   <ItemGroup>
     <ClInclude Include="ChildFrm.h" />
     <ClInclude Include="ClassView.h" />
+    <ClInclude Include="DlgStock.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxis.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxisLabel.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBalloonLabel.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBarSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCandlestickSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCrossHairCursor.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrl.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrlHeaders.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCursor.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDateTimeAxis.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDragLineCursor.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartFont.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGanttSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGradient.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGrid.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLabel.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLegend.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLineSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLogarithmicAxis.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartMouseListener.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsArray.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartScrollBar.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerieBase.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSeriesMouseListener.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartStandardAxis.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartString.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSurfaceSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartTitle.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartXYSerie.h" />
+    <ClInclude Include="exsources\HighSpeedChartingControl\ChartCtrl_source\PointsOrdering.h" />
     <ClInclude Include="FileView.h" />
     <ClInclude Include="FinancialTimeSeries.h" />
     <ClInclude Include="FortuneIt.h" />
@@ -235,6 +269,30 @@
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp" />
     <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="DlgStock.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxis.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartAxisLabel.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBarSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCtrl.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartCursor.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartDragLineCursor.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartFont.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGanttSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGradient.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartGrid.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLegend.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLineSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartScrollBar.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartStandardAxis.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartTitle.cpp" />
+    <ClCompile Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartXYSerie.cpp" />
     <ClCompile Include="FileView.cpp" />
     <ClCompile Include="FinancialTimeSeries.cpp" />
     <ClCompile Include="FortuneIt.cpp" />
@@ -259,6 +317,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="StkSet.cpp" />
+    <ClCompile Include="stock_core_types.cpp" />
     <ClCompile Include="TimePair.cpp" />
     <ClCompile Include="ViewTree.cpp" />
   </ItemGroup>
@@ -266,6 +325,10 @@
     <Midl Include="FortuneIt.idl" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartBalloonLabel.inl" />
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartLabel.inl" />
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartPointsArray.inl" />
+    <None Include="exsources\HighSpeedChartingControl\ChartCtrl_source\ChartSerieBase.inl" />
     <None Include="FortuneIt.reg" />
     <None Include="res\FortuneIt.rc2" />
   </ItemGroup>

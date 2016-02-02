@@ -78,10 +78,10 @@ typedef union tagSTKDATAEx
 typedef struct tagSPLITDATA	
 {
 	time_t	m_time;			//时间,UCT
-	float	m_fHg;			//红股
-	float	m_fPg;			//配股
+	float	m_fHg;			//红股（10送）
+	float	m_fPg;			//配股（10配）
 	float	m_fPgj;			//配股价
-	float	m_fHl;			//红利
+	float	m_fHl;			//红利（10送）
 } SPLITDATA;
 
 

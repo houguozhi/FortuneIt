@@ -14,19 +14,11 @@ IMPLEMENT_DYNAMIC(Cftsplit, CRecordset)
 
 Cftsplit::Cftsplit(CDatabase* pdb)
 	: CRecordset(pdb)
+	, m_lable(_T(""))
+	, m_SplitData()
 {
-	/*m_CreateDate;
-	m_RecordCreator = "";
-	m_RecordVersion = 0.0;
-	m_MarketLable = "";
-	m_SecurityType = "";*/
-	m_StkLable = _T("");
-	m_StkTime;
-	m_Hg = 0.0;
-	m_Pg = 0.0;
-	m_Pgj = 0.0;
-	m_Hl = 0.0;
-	//m_Reserved1 = "";
+	//m_lable = _T("");
+	//m_SplitData = CSplitData();
 	m_nFields = 6;// 12;
 	m_nDefaultType = snapshot;
 	
@@ -45,7 +37,7 @@ Cftsplit::Cftsplit(CDatabase* pdb)
 // 储为其他格式或使用其他的用户身份验证。
 CString Cftsplit::GetDefaultConnect()
 {
-	return _T("DSN=hgzStk32;Trusted_Connection=Yes;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=DESKTOP-863BSVD;DATABASE=hgzStkDB");
+	return _T("DSN=hgzStk64;Trusted_Connection=Yes;APP=Microsoft\x00ae Visual Studio\x00ae 2015;WSID=DESKTOP-863BSVD;DATABASE=hgzStkDB");
 }
 
 CString Cftsplit::GetDefaultSQL()
@@ -59,19 +51,12 @@ void Cftsplit::DoFieldExchange(CFieldExchange* pFX)
 // RFX_Text() 和 RFX_Int() 这类宏依赖的是
 // 成员变量的类型，而不是数据库字段的类型。
 // ODBC 尝试自动将列值转换为所请求的类型
-	/*RFX_Date(pFX, _T("[CreateDate]"), m_CreateDate);
-	RFX_Text(pFX, _T("[RecordCreator]"), m_RecordCreator);
-	RFX_Double(pFX, _T("[RecordVersion]"), m_RecordVersion);
-	RFX_Text(pFX, _T("[MarketLable]"), m_MarketLable);
-	RFX_Text(pFX, _T("[SecurityType]"), m_SecurityType);*/
-	RFX_Text(pFX, _T("[StkLable]"), m_StkLable);
-	RFX_Date(pFX, _T("[StkTime]"), m_StkTime);
-	RFX_Double(pFX, _T("[Hg]"), m_Hg);
-	RFX_Double(pFX, _T("[Pg]"), m_Pg);
-	RFX_Double(pFX, _T("[Pgj]"), m_Pgj);
-	RFX_Double(pFX, _T("[Hl]"), m_Hl);
-	//RFX_Text(pFX, _T("[Reserved1]"), m_Reserved1);
-
+	RFX_Text(pFX, _T("[StkLable]"), m_lable);
+	RFX_Date(pFX, _T("[StkTime]"), m_SplitData.time);
+	RFX_Double(pFX, _T("[Hg]"), m_SplitData.hg);
+	RFX_Double(pFX, _T("[Pg]"), m_SplitData.pg);
+	RFX_Double(pFX, _T("[Pgj]"), m_SplitData.pgj);
+	RFX_Double(pFX, _T("[Hl]"), m_SplitData.hl);
 
 	// parameters
 	pFX->SetFieldType(CFieldExchange::param);
@@ -94,6 +79,7 @@ void Cftsplit::Dump(CDumpContext& dc) const
 {
 	CRecordset::Dump(dc);
 }
+#endif //_DEBUG
 
 BOOL Cftsplit::Open(const CString &lable, const CTimePair &time)
 {
@@ -111,22 +97,25 @@ BOOL Cftsplit::Requery(const CString &lable, const CTimePair &time)
 
 void Cftsplit::print(int num /*= -1*/)
 {
+	if (IsEmpty())
+		return;
+	
 	// print title
-	::println(_T("\n-------------------------------------------------------------------------------------------"));
-	::println(_T("[Lable]\t      [Time]\t                            [Hg]\t [Pg]\t [Pgj]\t [Hl]"));
+	println(_T("\n-------------------------------------------------------------------------------------------"));
+	println(_T("[Lable]\t      [Time]\t                                       [Hg]\t [Pg]\t [Pgj]\t [Hl]"));
 	// print data
 	int cnt = 0;
 	MoveFirst();
 	for (cnt = 0; (num == -1 ? true : (cnt < num)) && !IsEOF(); )
 	{
 		cnt++;
-		::println(_T("%s %s %20.3f\t %20.3f\t %10.3f %20.3f"), m_StkLable.GetString(), m_StkTime.Format(_T("%Y%m%d %H:%M:%S %w")), m_Hg, m_Pg, m_Pgj, m_Hl);
+		println(_T("%s %s"), m_lable, m_SplitData.ToString());
 		MoveNext();
 	}
-	::println(_T("\n-------------------------------------------------------------------------------------------"));
-	::println(_T("Total count: %d"), cnt);
+	println(_T("\n-------------------------------------------------------------------------------------------"));
+	println(_T("Total count: %d"), cnt);
 }
 
-#endif //_DEBUG
+
 
 

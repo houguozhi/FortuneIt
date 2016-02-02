@@ -6,6 +6,7 @@
 
 #include <afxdb.h>
 #include "FinancialTimeSeries.h"
+#include "DlgStock.h"
 
 
 class CFortuneItView : public CView
@@ -46,6 +47,10 @@ protected:
 	afx_msg void OnRButtonUp(UINT nFlags, CPoint point);
 	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
 	DECLARE_MESSAGE_MAP()
+
+public:
+	CDlgStock m_dlgStk;
+
 public:
 	afx_msg void OnFortuneitTest1();
 	afx_msg void OnFortuneitTest2();

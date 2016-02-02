@@ -389,6 +389,28 @@ BEGIN
     DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
 END
 
+IDD_DIALOG1 DIALOGEX 0, 0, 621, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,450,246,50,14
+    PUSHBUTTON      "取消",IDCANCEL,509,246,50,14
+    COMBOBOX        IDC_COMBO1,100,18,75,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,43,18,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,295,17,114,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,415,17,114,15
+    COMBOBOX        IDC_COMBO3,187,18,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "复权",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,247,19,32,10
+    LTEXT           "市场",IDC_STATIC,43,6,17,8
+    LTEXT           "股票",IDC_STATIC,100,6,17,8
+    LTEXT           "周期",IDC_STATIC,187,6,17,8
+    LTEXT           "起始时间",IDC_STATIC,295,6,33,8
+    LTEXT           "终止时间",IDC_STATIC,415,6,33,8
+    PUSHBUTTON      "查询",IDC_BUTTON1,543,17,50,14
+    CONTROL         "Custom1",IDC_CHARTCTRL1,"ChartCtrl",WS_CLIPCHILDREN | WS_TABSTOP,42,48,552,168
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -444,8 +466,42 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 55
     END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 614
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
 END
 #endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 3, 0
+0x4853, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x5a53, "\000" 
+    0
+END
 
 
 /////////////////////////////////////////////////////////////////////////////

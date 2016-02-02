@@ -30,14 +30,7 @@ public:
 	CStringA	m_SecurityType;*/
 	CString	m_StkLable;
 	CString	m_StkName;
-	CTime	m_StkTime;
-	double	m_StkOpen;
-	double	m_StkHigh;
-	double	m_StkLow;
-	double	m_StkClose;
-	double	m_StkVolume;
-	double	m_StkAmount;
-	double	m_StkTurnoverRate;
+	CStkData m_StkData;
 	/*CStringA	m_Reserved1;
 	double	m_Reserved2;
 	long	m_Reserved3;
@@ -73,16 +66,20 @@ public:
 	void print(int num = -1);
 	CString& GetFieldName(int nIndex, CString& strFieldName);
 
-	BOOL Open(const CString &lable, const CTimePair &time, const CYCLE_t cycle = DAY);
+	BOOL Open(const CString &lable, const CTimePair &time, const STKCYCLE cycle = DAY);
 	//BOOL Requery(const CString &lable, const CTimePair &time, const CYCLE_t cycle = DAY);
 
 	//int GetValue(CFinancialTimeSeries::STKDATA &data);
 	CString SetDefaultSQL(CString &table);
 
 	int Fetch(int num = -1);
+	BOOL IsEmpty()
+	{
+		return (IsBOF() && IsEOF());
+	}
 
 protected:
-	bool BuildSQL(CString &sql, const CString &lable, const CTimePair &time, const CYCLE_t cycle = DAY);
+	bool BuildSQL(CString &sql, const CString &lable, const CTimePair &time, const STKCYCLE cycle = DAY);
 };
 
 

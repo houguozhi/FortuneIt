@@ -132,16 +132,25 @@ CFortuneItDoc* CFortuneItView::GetDocument() const // 非调试版本是内联的
 
 void CFortuneItView::OnFortuneitTest1()
 {
-	CDatabase db;
-	db.Open(_T("hgzStk32"));
-	CRecordset set1(&db);
-	db.Close();
+	CStock stk;
+	if (m_dlgStk.DoModal() == IDOK)
+	{
+		stk.Requery(
+			m_dlgStk.m_strMarket + m_dlgStk.m_strLable, 
+			m_dlgStk.m_Time, 
+			m_dlgStk.m_Cycle, true,
+			10
+			);
+
+	}
+
+	
 }
 
 
 void CFortuneItView::OnFortuneitTest2()
 {
 	CStock stk;
-	stk.Requery(_T("SZ000002"), CTimePair(CTime(2007, 1, 1, 0, 0, 0), CTime(2007, 5, 31, 23, 59, 59)), CYCLE_t::DAY);
+	stk.Requery(_T("SZ000002"), CTimePair(COleDateTime(2007, 1, 1, 0, 0, 0), COleDateTime(2007, 5, 31, 23, 59, 59)), STKCYCLE::DAY);
 	
 }
